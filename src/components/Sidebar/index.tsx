@@ -283,9 +283,9 @@ const renderGroup = (title: string, accounts: Account[]) => {
               {accounts.map((account, idx) => (
                 <li key={idx} className="flex justify-between py-2 pr-2 hover:text-white hover:bg-graydark dark:hover:bg-meta-4 group">
                 <Link
-                  href={`/${account.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/account/${account.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className={`relative flex items-center gap-2.5 rounded-md  font-medium text-bodydark2 duration-300 ease-in-out ${
-                    pathname === `/${account.name.toLowerCase().replace(/\s+/g, '-')}` && "text-white"
+                    pathname === `/account/${account.name.toLowerCase().replace(/\s+/g, '-')}` && "text-white"
                   } group-hover:text-white`}
                 >
                  <span className="">{account.name}</span> 
@@ -461,6 +461,7 @@ const renderGroup = (title: string, accounts: Account[]) => {
               {/* <!-- Menu Item Dashboard --> */}
 
               {/* MENU FOR ACCOUNTS    */}
+
 
               <>
                 {Object.keys(groupedAccounts.accountsByCurrency).map(

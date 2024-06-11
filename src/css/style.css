@@ -238,6 +238,81 @@ input[type="search"]::-webkit-search-cancel-button {
     background-size: 20px;
 }
 
+/* .custom-data-grid .MuiDataGrid-columnHeaders {
+    @apply bg-rose-700 !important;
+} */
+
+
+
+
+.super-app-theme--header {
+    @apply dark:text-white w-[100%] dark:font-bold capitalize dark:w-[100%] dark:!bg-[#6099b6] !important;
+}
+
+.css-yrdy0g-MuiDataGrid-columnHeaderRow {
+    @apply w-full dark:!bg-[#6099b6] !important;
+}
+
+.css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+    @apply text-white !important;
+}
+
+.PrivateSwitchBase-input  {
+    @apply dark:border-white border-white !important;
+}
+
+:is(dark .css-1m9pwf3)  {
+    @apply dark:border-white border-white !important;
+}
+
+
+
+.customDataGrid:global(.MuiDataGrid-columnHeaders) {
+    @apply bg-rose-800 !important;
+  }
+  
+  /* customPagination.module.css */
+.pagination {
+  @apply  text-white; /* Set the text color to white */
+}
+.MuiPagination-ul {
+  /* Target the list element for better specificity */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.MuiPaginationItem-root {
+  /* Target individual pagination items */
+  display: inline-block;
+}
+
+.css-pdct74-MuiTablePagination-selectLabel {
+    @apply text-white !important;
+}
+
+.MuiTablePagination-root  {
+    @apply text-white !important;
+}
+
+.css-rtrcn9-MuiTablePagination-root {
+    @apply text-white !important;
+}
+
+.MuiTablePagination-actions {
+    @apply text-white !important;
+}
+
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+    @apply text-white !important;
+}
+
+.MuiTablePagination-selectIcon {
+    @apply text-white !important;
+}
+
+/* MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon" */
+
+
 [x-cloak] {
-    display: none !important;
+    display: none !important ;
 }
